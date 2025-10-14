@@ -3,6 +3,8 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import Home from './pages/Home';
 import Produto from './components/Produto';
 import Categoria from './components/Categoria';
+import Login from './components/Login';
+import Cadastro from './components/Cadastro';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -19,6 +21,10 @@ function App() {
               <Nav.Link href="/produtos">Produtos</Nav.Link>
               <Nav.Link href="/categorias">Categorias</Nav.Link>
             </Nav>
+            <Nav>
+              <Nav.Link href="/login">Login</Nav.Link>
+              <Nav.Link href="/cadastro">Cadastro</Nav.Link>
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
@@ -27,6 +33,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/produtos" element={<Produto />} />
         <Route path="/categorias" element={<Categoria />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/cadastro" element={<Cadastro />} />
       </Routes>
     </Router>
   );
