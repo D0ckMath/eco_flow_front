@@ -7,7 +7,9 @@ function Cadastro() {
   const [formData, setFormData] = useState({
     nome: '',
     email: '',
-    senha: ''
+    telefone: '',
+    senha: '',
+    confirmarSenha: ''
   });
 
   const handleChange = (e) => {
@@ -20,6 +22,7 @@ function Cadastro() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Cadastro:', formData);
+    navigate('/dashboard');
   };
 
   return (
@@ -49,11 +52,31 @@ function Cadastro() {
               />
             </Form.Group>
             <Form.Group className="mb-3">
+              <Form.Label>Telefone</Form.Label>
+              <Form.Control
+                type="tel"
+                name="telefone"
+                value={formData.telefone}
+                onChange={handleChange}
+                required
+              />
+            </Form.Group>
+            <Form.Group className="mb-3">
               <Form.Label>Senha</Form.Label>
               <Form.Control
                 type="password"
                 name="senha"
                 value={formData.senha}
+                onChange={handleChange}
+                required
+              />
+            </Form.Group>
+            <Form.Group className="mb-3">
+              <Form.Label>Confirmar Senha</Form.Label>
+              <Form.Control
+                type="password"
+                name="confirmarSenha"
+                value={formData.confirmarSenha}
                 onChange={handleChange}
                 required
               />

@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import Dashboard from './pages/Dashboard';
+import Profile from './pages/Profile';
 import Produto from './components/Produto';
 import Categoria from './components/Categoria';
 import Login from './components/Login';
@@ -12,6 +14,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/produtos" element={<Produto />} />
         <Route path="/categorias" element={<Categoria />} />
         <Route path="/login" element={<Login />} />

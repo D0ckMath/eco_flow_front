@@ -27,7 +27,7 @@ const Home = () => {
           Sustentabilidade, economia circular e responsabilidade social em um só lugar.
         </p>
         <div className="actions">
-          <button className="btn btn-primary" onClick={() => navigate('/cadastro')}>Cadastrar-se</button>
+          <button className="btn btn-primary" onClick={() => navigate('/cadastro')}>Faça seu cadastro!</button>
           <button className="btn btn-secondary" onClick={() => navigate('/login')}>Entrar</button>
         </div>
       </section>

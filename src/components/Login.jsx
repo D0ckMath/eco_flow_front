@@ -19,6 +19,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Login:', formData);
+    navigate('/dashboard');
   };
 
   return (
