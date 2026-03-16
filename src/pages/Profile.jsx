@@ -87,19 +87,6 @@ const Profile = () => {
               </div>
               
               <div className="form-group">
-                <label>Perfil</label>
-                <select
-                  name="perfil"
-                  value={userData.perfil}
-                  onChange={handleChange}
-                  disabled={!isEditing}
-                >
-                  <option value="Comprador">Comprador</option>
-                  <option value="Vendedor">Vendedor</option>
-                </select>
-              </div>
-              
-              <div className="form-group">
                 <label>Endereço</label>
                 <input
                   type="text"

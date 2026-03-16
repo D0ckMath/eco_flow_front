@@ -23,8 +23,7 @@ const Home = () => {
       <section className="hero">
         <h1>Bem-vindo à EcoFlow</h1>
         <p>
-          Conectamos pessoas e empresas para comprar, vender e doar materiais recicláveis.
-          Sustentabilidade, economia circular e responsabilidade social em um só lugar.
+          Divulgue seus materiais reciclaveis aqui!!!
         </p>
         <div className="actions">
           <button className="btn btn-primary" onClick={() => navigate('/cadastro')}>Faça seu cadastro!</button>
@@ -34,7 +33,7 @@ const Home = () => {
 
       {/* Materiais Aceitos */}
       <section id="materiais">
-        <h2>♻️ Materiais Aceitos</h2>
+        <h2>Materiais Aceitos</h2>
         <div className="grid">
           <div className="card">
             <img src="https://img.elo7.com.br/product/zoom/240C87D/adesivos-coleta-seletiva-lixo-reciclado-pte-c-4-unid-adesivo.jpg" alt="Reciclagem de Plásticos" loading="lazy" />
@@ -61,7 +60,7 @@ const Home = () => {
 
       {/* Por que escolher a EcoFlow */}
       <section id="porque">
-        <h2>🌍 Por que escolher a EcoFlow?</h2>
+        <h2>Por que escolher a EcoFlow?</h2>
         <div className="grid">
           <div className="card">
             <h3>Confiabilidade</h3>
